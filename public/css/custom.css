@@ -9903,4 +9903,8 @@ h3 {
   border-width: 0.05em !important;
 }
 
+.blur {
+  filter: blur(35px);
+}
+
 /*# sourceMappingURL=custom.css.map */
