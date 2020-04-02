@@ -28,19 +28,35 @@
     </div>
     <!-- End Site Header -->
 
-    <!-- Begin About Me -->
-    <div class="jumbotron d-flex my-0" id="about" name="about" style="height: 50vh">
+    <!-- Begin Jumbotron -->
+    <div class="jumbotron d-flex my-0 pb-0" id="about" name="about">
       <div class="container my-auto text-center">
-        <h1 class="display-3">Hello! My name is Daniel.</h1>
+        <div class="row mb-4 mb-md-0">
 
-        <!-- Begin About Me -->
-        <div class="mt-5 text-left" id="about" name="about">
-          <h1>About Me</h1>
+          <div class="col-md-4">
+            <img class="img img-fluid w-50 rounded-circle border border-secondary border-4 mt-5 d-md-none" src="public/images/dfl_header_mobile.jpg" alt="mobile">
+            <img class="img img-fluid d-none d-md-block" src="public/images/dfl_header_desktop.png" alt="desktop">
+          </div>
+
+          <div class="col-md-7 offset-1 align-self-center">
+            <!-- Begin About Me -->
+              <div class="text-left">
+                <h1 class="my-4">About Me</h1>
+
+                <p class="display-4 d-none d-md-block">Hello! My name is Daniel.</p>
+                <h4 class="d-md-none">Hello! My name is Daniel.</h4>
+
+                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pellentesque turpis mi, eu vehicula justo efficitur sed. Nunc et pors sodales volutpat.</p>
+
+                <p>In hac habitasse platea dictumst. Curabia. Quisque faucibus dui neque, in malesuada lacus gravida eu. Vestibulum risus nisi, maximus eu sollicitudin et, consequat eu leo. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+              </div>
+            <!-- End About Me -->
+          </div>
+
         </div>
-        <!-- End About Me -->
       </div>
     </div>
-    <!-- End About Me -->
+    <!-- End Jumbotron -->
 
     <div class="sticky-top">
       <div class="d-none bg-primary transition-ease" id="navbar-border" style="height: 10px">
@@ -194,6 +210,10 @@
     <!-- <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script> -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
+    <!-- Ajax -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
     <script src="public/js/sticky-header.js"></script>
+    <script src="public/js/smooth-scroll.js"></script>
   </body>
 </html>
