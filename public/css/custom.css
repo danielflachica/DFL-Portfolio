@@ -9875,5 +9875,8 @@ h3 {
     border-color: #dee2e6;
   }
 }
+.transition-ease {
+  transition: 0.3s ease;
+}
 
 /*# sourceMappingURL=custom.css.map */

@@ -7,3 +7,6 @@ $theme-colors: (
 @import "node_modules/bootstrap/scss/bootstrap";
 
 // Custom styles go here
+.transition-ease {
+	transition: .3s ease;
+}

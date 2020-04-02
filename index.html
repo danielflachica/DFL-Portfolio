@@ -16,10 +16,10 @@
   </head>
   <body>
     <!-- Begin Site Header -->
-    <div class="d-flex bg-primary">
+    <div class="d-flex position-absolute w-100 bg-primary transition-ease" id="site-header">
       <div class="container text-center py-2">
         <div class="d-inline-block mx-1">
-          <img class="img img-fluid rounded-circle border border-white" src="public/images/dfl.jpg" alt="Logo" style="height: 30px">
+          <img class="img img-fluid rounded-circle" src="public/images/dfl.jpg" alt="Logo" style="height: 30px">
         </div>
         <div class="d-inline-block mx-1">
           <p class="text-light mb-0">Daniel Lachica</p>
@@ -29,7 +29,7 @@
     <!-- End Site Header -->
 
     <!-- Begin About Me -->
-    <div class="jumbotron d-flex my-0" style="height: 50vh">
+    <div class="jumbotron d-flex my-0" id="about" name="about" style="height: 50vh">
       <div class="container my-auto text-center">
         <h1 class="display-3">Hello! My name is Daniel.</h1>
 
@@ -42,45 +42,50 @@
     </div>
     <!-- End About Me -->
 
-    <!-- Begin Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white py-4 sticky-top text-center">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mx-auto">
-          <li class="nav-item mx-0 mx-md-4 text-uppercase active">
-            <a class="nav-link" href="#about">About Me <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item mx-0 mx-md-4 text-uppercase">
-            <a class="nav-link" href="#projects">My Projects</a>
-          </li>
-          <li class="nav-item mx-0 mx-md-4 text-uppercase dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBG" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Background
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownBG">
-              <a class="dropdown-item" href="#">Education</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Something else here</a>
-            </div>
-          </li>
-          <li class="nav-item mx-0 mx-md-4 text-uppercase">
-            <a class="nav-link" href="#experience">Work Experience</a>
-          </li>
-          <li class="nav-item mx-0 mx-md-4 text-uppercase">
-            <a class="nav-link" href="#downloads">Downloads</a>
-          </li>
-          <li class="nav-item mx-0 mx-md-4 text-uppercase">
-            <a class="nav-link" href="#contact">Contact Me</a>
-          </li>
-        </ul>
+    <div class="sticky-top">
+      <div class="d-none bg-primary transition-ease" id="navbar-border" style="height: 10px">
       </div>
-    </nav>
-    <!-- End Navbar -->
 
+      <!-- Begin Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-white py-4 text-center" id="navbar">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item mx-0 mx-md-4 text-uppercase active">
+              <a class="nav-link" href="#about">About Me <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item mx-0 mx-md-4 text-uppercase">
+              <a class="nav-link" href="#projects">My Projects</a>
+            </li>
+            <li class="nav-item mx-0 mx-md-4 text-uppercase dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBG" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Background
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownBG">
+                <a class="dropdown-item" href="#">Education</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+            <li class="nav-item mx-0 mx-md-4 text-uppercase">
+              <a class="nav-link" href="#experience">Work Experience</a>
+            </li>
+            <li class="nav-item mx-0 mx-md-4 text-uppercase">
+              <a class="nav-link" href="#downloads">Downloads</a>
+            </li>
+            <li class="nav-item mx-0 mx-md-4 text-uppercase">
+              <a class="nav-link" href="#contact">Contact Me</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    <!-- End Navbar -->
+    </div>
+       
     <!-- Begin Content -->
     <div class="container bg-white py-5" style="min-height: 100vh;">
       <!-- Begin My Projects -->
@@ -188,5 +193,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <!-- <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script> -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <script src="public/js/sticky-header.js"></script>
   </body>
 </html>
