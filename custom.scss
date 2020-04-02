@@ -10,3 +10,5 @@ $theme-colors: (
 .transition-ease {
 	transition: .3s ease;
 }
+
+html { scroll-behavior: smooth; }

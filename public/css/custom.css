@@ -9879,4 +9879,8 @@ h3 {
   transition: 0.3s ease;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /*# sourceMappingURL=custom.css.map */
