@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/danielflachica/portfolio#readme",
   "dependencies": {
-    "bootstrap": "^4.4.1"
+    "bootstrap": "^4.4.1",
+    "jquery-parallax.js": "^1.5.0"
   }
 }

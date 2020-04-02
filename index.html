@@ -16,10 +16,10 @@
   </head>
   <body>
     <!-- Begin Site Header -->
-    <div class="d-flex bg-primary">
+    <div class="d-flex position-absolute w-100 bg-primary transition-ease" id="site-header">
       <div class="container text-center py-2">
         <div class="d-inline-block mx-1">
-          <img class="img img-fluid rounded-circle border border-white" src="public/images/dfl.jpg" alt="Logo" style="height: 30px">
+          <img class="img img-fluid rounded-circle" src="public/images/dfl.jpg" alt="Logo" style="height: 30px">
         </div>
         <div class="d-inline-block mx-1">
           <p class="text-light mb-0">Daniel Lachica</p>
@@ -28,59 +28,80 @@
     </div>
     <!-- End Site Header -->
 
-    <!-- Begin About Me -->
-    <div class="jumbotron d-flex my-0" style="height: 50vh">
-      <div class="container my-auto text-center">
-        <h1 class="display-3">Hello! My name is Daniel.</h1>
+    <!-- Begin Jumbotron -->
+    <div class="parallax-window d-flex my-0 pt-5" id="about" name="about" data-parallax="scroll" data-image-src="public/images/parallax-bg-blur.jpg">
+      <div class="container mt-5 mb-0 text-center">
+        <div class="row mb-4 mb-md-0">
 
-        <!-- Begin About Me -->
-        <div class="mt-5 text-left" id="about" name="about">
-          <h1>About Me</h1>
+          <div class="col-md-4">
+            <img class="img img-fluid w-50 rounded-circle border border-secondary border-4 mt-2 mb-3 d-md-none" src="public/images/dfl_header_mobile.jpg" alt="mobile">
+            <img class="img img-fluid d-none d-md-block" src="public/images/dfl_header_desktop.png" alt="desktop">
+          </div>
+
+          <div class="col-md-7 offset-md-1 align-self-center">
+            <!-- Begin About Me -->
+              <div class="text-left text-white px-4 px-md-0">
+                <h1 class="my-4">About Me</h1>
+
+                <p class="display-4 d-none d-md-block text-secondary">Hello! My name is Daniel.</p>
+                <h4 class="d-md-none text-secondary">Hello! My name is Daniel.</h4>
+
+                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pellentesque turpis mi, eu vehicula justo efficitur sed. Nunc et pors sodales volutpat.</p>
+
+                <p>In hac habitasse platea dictumst. Curabia. Quisque faucibus dui neque, in malesuada lacus gravida eu. Vestibulum risus nisi, maximus eu sollicitudin et, consequat eu leo. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+              </div>
+            <!-- End About Me -->
+          </div>
+
         </div>
-        <!-- End About Me -->
       </div>
     </div>
-    <!-- End About Me -->
+    <!-- End Jumbotron -->
 
-    <!-- Begin Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white py-4 sticky-top text-center">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mx-auto">
-          <li class="nav-item mx-0 mx-md-4 text-uppercase active">
-            <a class="nav-link" href="#about">About Me <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item mx-0 mx-md-4 text-uppercase">
-            <a class="nav-link" href="#projects">My Projects</a>
-          </li>
-          <li class="nav-item mx-0 mx-md-4 text-uppercase dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBG" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Background
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownBG">
-              <a class="dropdown-item" href="#">Education</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Something else here</a>
-            </div>
-          </li>
-          <li class="nav-item mx-0 mx-md-4 text-uppercase">
-            <a class="nav-link" href="#experience">Work Experience</a>
-          </li>
-          <li class="nav-item mx-0 mx-md-4 text-uppercase">
-            <a class="nav-link" href="#downloads">Downloads</a>
-          </li>
-          <li class="nav-item mx-0 mx-md-4 text-uppercase">
-            <a class="nav-link" href="#contact">Contact Me</a>
-          </li>
-        </ul>
+    <div class="sticky-top">
+      <div class="d-none bg-primary transition-ease" id="navbar-border" style="height: 10px">
       </div>
-    </nav>
-    <!-- End Navbar -->
 
+      <!-- Begin Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-white py-4 text-center" id="navbar">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item mx-0 mx-md-4 text-uppercase active">
+              <a class="nav-link" href="#about">About Me <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item mx-0 mx-md-4 text-uppercase">
+              <a class="nav-link" href="#projects">My Projects</a>
+            </li>
+            <li class="nav-item mx-0 mx-md-4 text-uppercase dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBG" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Background
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownBG">
+                <a class="dropdown-item" href="#">Education</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+            <li class="nav-item mx-0 mx-md-4 text-uppercase">
+              <a class="nav-link" href="#experience">Work Experience</a>
+            </li>
+            <li class="nav-item mx-0 mx-md-4 text-uppercase">
+              <a class="nav-link" href="#downloads">Downloads</a>
+            </li>
+            <li class="nav-item mx-0 mx-md-4 text-uppercase">
+              <a class="nav-link" href="#contact">Contact Me</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    <!-- End Navbar -->
+    </div>
+       
     <!-- Begin Content -->
     <div class="container bg-white py-5" style="min-height: 100vh;">
       <!-- Begin My Projects -->
@@ -188,5 +209,14 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <!-- <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script> -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <!-- Ajax -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Parallax.js -->
+    <script src="node_modules/jquery-parallax.js/parallax.min.js"></script>
+
+    <script src="public/js/sticky-header.js"></script>
+    <script src="public/js/smooth-scroll.js"></script>
   </body>
 </html>

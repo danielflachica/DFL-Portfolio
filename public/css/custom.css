@@ -9875,5 +9875,36 @@ h3 {
     border-color: #dee2e6;
   }
 }
+.transition-ease {
+  transition: 0.3s ease;
+}
+
+.border-1 {
+  border-width: 1em !important;
+}
+
+.border-2 {
+  border-width: 0.75em !important;
+}
+
+.border-3 {
+  border-width: 0.5em !important;
+}
+
+.border-4 {
+  border-width: 0.25em !important;
+}
+
+.border-5 {
+  border-width: 0.1em !important;
+}
+
+.border-6 {
+  border-width: 0.05em !important;
+}
+
+.blur {
+  filter: blur(35px);
+}
 
 /*# sourceMappingURL=custom.css.map */
