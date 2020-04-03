@@ -9918,7 +9918,7 @@ h3 {
   color: #07bbad !important;
 }
 
-.navbar-nav li.active > a {
+.navbar-nav li > a.active {
   border-left: 5px solid #07bbad;
   color: #07bbad !important;
 }
