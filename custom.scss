@@ -1,8 +1,13 @@
+$primary: 	#002f50;
+$secondary: #07bbad;
+$success: 	#00a86b;
+$dark: 		#1f1f1f;
+
 $theme-colors: (
-  "primary": #002f50,
-  "secondary": #07bbad,
-  "success": #00a86b,
-  "dark": #1f1f1f
+  "primary": $primary,
+  "secondary": $secondary,
+  "success": $success,
+  "dark": $dark
 );
 
 @import "node_modules/bootstrap/scss/bootstrap";
@@ -35,16 +40,16 @@ $theme-colors: (
 
 	&:hover,
 	&:focus {
-		color: #07bbad !important
+		color: $secondary !important
 	}
 }
 
 .navbar-nav li.active > a {
-	border-left: 5px solid #07bbad;
-	color: #07bbad !important
+	border-left: 5px solid $secondary;
+	color: $secondary !important
 }
 
 .border-top-primary {
-	border-top: 0.6em solid #002f50;
+	border-top: 0.6em solid $primary;
 	transition: border-top .3s ease;
 }
