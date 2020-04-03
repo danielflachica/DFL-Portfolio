@@ -14,7 +14,7 @@
 
     <!-- TO-DO: Add favicon -->
   </head>
-  <body>
+  <body class="position-relative" data-spy="scroll" data-target=".navbar" data-offset="120">
     <!-- Begin Site Header -->
     <div class="d-flex position-absolute w-100 bg-primary transition-ease" id="site-header">
       <div class="container text-center py-2">
@@ -70,21 +70,21 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mx-auto">
-            <li class="nav-item mx-0 mx-md-4 text-uppercase active">
+            <li class="nav-item mx-0 mx-md-4 text-uppercase">
               <a class="nav-link" href="#about">About Me <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item mx-0 mx-md-4 text-uppercase">
               <a class="nav-link" href="#projects">My Projects</a>
             </li>
             <li class="nav-item mx-0 mx-md-4 text-uppercase dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBG" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <a class="nav-link dropdown-toggle" href="" id="navbarDropdownBG" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Background
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdownBG">
-                <a class="dropdown-item" href="#">Education</a>
-                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#skills">Technical Skills</a>
+                <a class="dropdown-item" href="#education">Education</a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Something else here</a>
+                <a class="dropdown-item" href="#involvements">Other Involvements</a>
               </div>
             </li>
             <li class="nav-item mx-0 mx-md-4 text-uppercase">
@@ -170,25 +170,42 @@
       <!-- End My Projects -->
 
       <!-- Begin Background -->
-      <div class="mb-5" id="background" name="background">
+      <div class="mb-5" id="background" name="background" style="min-height: 500px">
         <h1>Background</h1>
+        <!-- Begin Technical Skills -->
+        <div id="skills" name="skills" style="height: 300px">
+          <h3>Technical Skills</h3>
+        </div>
+        <!-- End Technical Skills -->
+
+        <!-- Begin Education -->
+        <div id="education" name="education" style="height: 300px">
+          <h3>Education</h3>
+        </div>
+        <!-- End Education -->
+
+        <!-- Begin Other Involvements -->
+        <div id="involvements" name="involvements" style="height: 300px">
+          <h3>Other Involvements</h3>
+        </div>
+        <!-- End Other Involvements -->
       </div>
       <!-- End Background -->
 
       <!-- Begin Work Experience -->
-      <div class="mb-5" id="experience" name="experience">
+      <div class="mb-5" id="experience" name="experience" style="min-height: 500px">
         <h1>Work Experience</h1>
       </div>
       <!-- End Work Experience -->
 
       <!-- Begin Downloads -->
-      <div class="mb-5" id="downloads" name="downloads">
+      <div class="mb-5" id="downloads" name="downloads" style="height: 500px">
         <h1>Downloads</h1>
       </div>
       <!-- End Downloads -->
 
       <!-- Begin Contact Me -->
-      <div class="mb-0" id="contact" name="contact">
+      <div class="mb-0" id="contact" name="contact" style="height: 500px">
         <h1>Contact Me</h1>
       </div>
       <!-- End Contact Me -->
