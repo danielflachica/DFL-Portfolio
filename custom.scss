@@ -30,3 +30,21 @@ $theme-colors: (
 	background-repeat: no-repeat;
 	background-size: cover;
 } */
+
+.navbar-nav li > a {
+
+	&:hover,
+	&:focus {
+		color: #07bbad !important
+	}
+}
+
+.navbar-nav li.active > a {
+	border-left: 5px solid #07bbad;
+	color: #07bbad !important
+}
+
+.border-top-primary {
+	border-top: 0.6em solid #002f50;
+	transition: border-top .3s ease;
+}
