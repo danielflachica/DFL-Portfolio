@@ -10,11 +10,14 @@
     <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
     <link rel="stylesheet" type="text/css" href="public/css/custom.css">
 
+    <!-- Material Design Icons -->
+    <link rel="stylesheet" type="text/css" href="node_modules/material-design-icons/iconfont/material-icons.css">
+
     <title>Daniel Lachica</title>
 
     <!-- TO-DO: Add favicon -->
   </head>
-  <body>
+  <body class="position-relative" data-spy="scroll" data-target=".navbar" data-offset="120">
     <!-- Begin Site Header -->
     <div class="d-flex position-absolute w-100 bg-primary transition-ease" id="site-header">
       <div class="container text-center py-2">
@@ -29,7 +32,8 @@
     <!-- End Site Header -->
 
     <!-- Begin Jumbotron -->
-    <div class="parallax-window d-flex my-0 pt-5" id="about" name="about" data-parallax="scroll" data-image-src="public/images/parallax-bg-blur.jpg" data-speed="0.5" data-iosFix="true" data-androidFix="false">
+    <!-- <div class="parallax-window d-flex my-0 pt-5" id="about" name="about" data-parallax="scroll" data-image-src="public/images/parallax-bg-blur.jpg" data-speed="0.5" data-iosFix="true" data-androidFix="false"> -->
+    <div class="jumbotron my-0 pt-5 pb-0" id="about" name="about">
       <div class="container mt-5 mb-0 text-center">
         <div class="row mb-4 mb-md-0">
 
@@ -40,7 +44,7 @@
 
           <div class="col-md-7 offset-md-1 align-self-center">
             <!-- Begin About Me -->
-              <div class="text-left text-white px-4 px-md-0">
+              <div class="text-left text-dark px-4 px-md-0">
                 <h1 class="my-4">About Me</h1>
 
                 <p class="display-4 d-none d-md-block text-secondary">Hello! My name is Daniel.</p>
@@ -58,33 +62,29 @@
     </div>
     <!-- End Jumbotron -->
 
-    <div class="sticky-top">
-      <div class="d-none bg-primary transition-ease" id="navbar-border" style="height: 10px">
-      </div>
-
-      <!-- Begin Navbar -->
-      <nav class="navbar navbar-expand-lg navbar-light bg-white py-4 text-center" id="navbar">
+    <!-- Begin Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-white py-4 text-center sticky-top" id="navbar">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mx-auto">
-            <li class="nav-item mx-0 mx-md-4 text-uppercase active">
-              <a class="nav-link" href="#about">About Me <span class="sr-only">(current)</span></a>
+            <li class="nav-item mx-0 mx-md-4 text-uppercase">
+              <a class="nav-link active" href="#about">About Me <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item mx-0 mx-md-4 text-uppercase">
               <a class="nav-link" href="#projects">My Projects</a>
             </li>
             <li class="nav-item mx-0 mx-md-4 text-uppercase dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBG" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <a class="nav-link dropdown-toggle" href="" id="navbarDropdownBG" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Background
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdownBG">
-                <a class="dropdown-item" href="#">Education</a>
-                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#skills">Technical Skills</a>
+                <a class="dropdown-item" href="#education">Education</a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Something else here</a>
+                <a class="dropdown-item" href="#involvements">Other Involvements</a>
               </div>
             </li>
             <li class="nav-item mx-0 mx-md-4 text-uppercase">
@@ -100,7 +100,6 @@
         </div>
       </nav>
     <!-- End Navbar -->
-    </div>
        
     <!-- Begin Content -->
     <div class="container bg-white py-5" style="min-height: 100vh;">
@@ -111,7 +110,7 @@
         <div class="row">
           <div class="col-md-4 mt-4">
             <div class="card w-100">
-              <img src="public/images/dfl.jpg" class="card-img-top" alt="...">
+              <img src="public/images/offline_image.png" class="card-img-top" alt="...">
               <div class="card-body">
                 <h3 class="card-text">Project Title</h3>
                 <p class="card-text">Project Description. <code>TO-DO:</code> Zoom on hover effect on card image.</p>
@@ -121,7 +120,7 @@
 
           <div class="col-md-4 mt-4">
             <div class="card w-100">
-              <img src="public/images/dfl.jpg" class="card-img-top" alt="...">
+              <img src="public/images/offline_image.png" class="card-img-top" alt="...">
               <div class="card-body">
                 <h3 class="card-text">Project Title</h3>
                 <p class="card-text">Project Description. <code>TO-DO:</code> Zoom on hover effect on card image.</p>
@@ -131,7 +130,7 @@
 
           <div class="col-md-4 mt-4">
             <div class="card w-100">
-              <img src="public/images/dfl.jpg" class="card-img-top" alt="...">
+              <img src="public/images/offline_image.png" class="card-img-top" alt="...">
               <div class="card-body">
                 <h3 class="card-text">Project Title</h3>
                 <p class="card-text">Project Description. <code>TO-DO:</code> Zoom on hover effect on card image.</p>
@@ -141,7 +140,7 @@
 
           <div class="col-md-4 mt-4">
             <div class="card w-100">
-              <img src="public/images/dfl.jpg" class="card-img-top" alt="...">
+              <img src="public/images/offline_image.png" class="card-img-top" alt="...">
               <div class="card-body">
                 <h3 class="card-text">Project Title</h3>
                 <p class="card-text">Project Description. <code>TO-DO:</code> Zoom on hover effect on card image.</p>
@@ -151,7 +150,7 @@
 
           <div class="col-md-4 mt-4">
             <div class="card w-100">
-              <img src="public/images/dfl.jpg" class="card-img-top" alt="...">
+              <img src="public/images/offline_image.png" class="card-img-top" alt="...">
               <div class="card-body">
                 <h3 class="card-text">Project Title</h3>
                 <p class="card-text">Project Description. <code>TO-DO:</code> Zoom on hover effect on card image.</p>
@@ -170,26 +169,51 @@
       <!-- End My Projects -->
 
       <!-- Begin Background -->
-      <div class="mb-5" id="background" name="background">
+      <div class="mb-5" id="background" name="background" style="min-height: 500px">
         <h1>Background</h1>
+        <!-- Begin Technical Skills -->
+        <div id="skills" name="skills" style="height: 300px">
+          <h3>Technical Skills</h3>
+        </div>
+        <!-- End Technical Skills -->
+
+        <!-- Begin Education -->
+        <div id="education" name="education" style="height: 300px">
+          <h3>Education</h3>
+        </div>
+        <!-- End Education -->
+
+        <!-- Begin Other Involvements -->
+        <div id="involvements" name="involvements" style="height: 300px">
+          <h3>Other Involvements</h3>
+        </div>
+        <!-- End Other Involvements -->
       </div>
       <!-- End Background -->
 
       <!-- Begin Work Experience -->
-      <div class="mb-5" id="experience" name="experience">
+      <div class="mb-5" id="experience" name="experience" style="min-height: 500px">
         <h1>Work Experience</h1>
       </div>
       <!-- End Work Experience -->
 
       <!-- Begin Downloads -->
-      <div class="mb-5" id="downloads" name="downloads">
+      <div class="mb-5" id="downloads" name="downloads" style="height: 500px">
         <h1>Downloads</h1>
       </div>
       <!-- End Downloads -->
 
       <!-- Begin Contact Me -->
-      <div class="mb-0" id="contact" name="contact">
+      <div class="mb-5" id="contact" name="contact">
         <h1>Contact Me</h1>
+        <p class="mt-4">
+          If you have any questions or business-related inquiries, don't hesitate to reach me at
+          <span class="text-info">daniel.lachica82@gmail.com</span>!
+        </p>
+        <a class="btn btn-secondary w-100 p-3" href="mailto:daniel.lachica82@gmail.com">
+          <span class="material-icons mr-2">mail</span>
+          <span class="text-uppercase font-weight-bold">Contact Me</span>
+        </a>
       </div>
       <!-- End Contact Me -->
     </div>
@@ -214,7 +238,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
     <!-- Parallax.js -->
-    <script src="/node_modules/jquery-parallax.js/parallax.min.js"></script>
+    <script src="node_modules/jquery-parallax.js/parallax.min.js"></script>
 
     <script src="public/js/sticky-header.js"></script>
     <script src="public/js/smooth-scroll.js"></script>

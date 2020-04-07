@@ -1,7 +1,13 @@
+$primary: 	#002f50;
+$secondary: #07bbad;
+$success: 	#00a86b;
+$dark: 		#1f1f1f;
+
 $theme-colors: (
-  "primary": #002f50,
-  "secondary": #07bbad,
-  "success": #00a86b
+  "primary": $primary,
+  "secondary": $secondary,
+  "success": $success,
+  "dark": $dark
 );
 
 @import "node_modules/bootstrap/scss/bootstrap";
@@ -20,4 +26,30 @@ $theme-colors: (
 
 .blur {
 	filter: blur(35px);
+}
+
+/* #about {
+	background-image: url("/public/images/parallax-bg-bluer.jpg");
+	background-color: #263238;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+} */
+
+.navbar-nav li > a {
+
+	&:hover,
+	&:focus {
+		color: $secondary !important
+	}
+}
+
+.navbar-nav li > a.active {
+	border-left: 5px solid $secondary;
+	color: $secondary !important
+}
+
+.border-top-primary {
+	border-top: 0.6em solid $primary;
+	transition: border-top .3s ease;
 }
